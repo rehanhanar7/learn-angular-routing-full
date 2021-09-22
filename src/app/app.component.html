@@ -1,0 +1,12 @@
+<h1>Angular Routing</h1>
+<a [routerLink]="['/home']">Home</a>
+<br />
+<a [routerLink]="['/users']">Users</a>
+<br />
+<a
+  [routerLink]="['/department', { name: 'i am a param' }]"
+  [queryParams]="{ name: 'i am a query param' }"
+  [fragment]="'loadingtext'"
+  >Department</a
+>
+<router-outlet></router-outlet>
